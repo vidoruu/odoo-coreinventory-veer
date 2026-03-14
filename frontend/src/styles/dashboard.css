@@ -1,0 +1,120 @@
+.dashboard-section {
+  margin-bottom: var(--space-8);
+}
+
+.dashboard-section-title {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: var(--font-size-xs);
+}
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
+}
+
+.quick-action-btn {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  text-decoration: none;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.quick-action-btn:hover {
+  background: var(--color-surface-raised);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.quick-action-icon {
+  font-size: 24px;
+}
+
+.quick-action-label {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+.dashboard-main-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.action-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  position: relative;
+  overflow: hidden;
+}
+
+.action-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+.action-card-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.action-card-stats {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+}
+
+.action-card-stats .count {
+  font-size: var(--font-size-6xl);
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.action-card-stats .label {
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.action-card-footer {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-subtle);
+  margin-top: auto;
+}
+
+.delivery-card .count {
+  color: var(--color-warning);
+}
+
+.delivery-card:hover {
+  border-color: var(--color-warning);
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
